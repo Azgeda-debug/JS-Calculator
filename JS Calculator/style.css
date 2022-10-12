@@ -1,0 +1,149 @@
+/* Global Settings */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+:root
+{
+    --background: linear-gradient(to right bottom, #a7b7e4, #4f7ec4, #7a6fdd, #7d3ac5, #9f61d1, #bd53d8);
+}
+
+body
+{
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 20px;
+}
+/* Calculator Styling */
+
+.calculator
+{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-width: 400px;
+    height: 60vh;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.result
+{
+    height: 20%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    margin: 5px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-break: break-all;
+}
+
+.previous-number
+{
+    font-size: 18px;
+    color: #c5c5c5;
+}
+
+.current-number
+{
+    font-size: 26px;
+}
+
+.numbers
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+    height: 77%;
+}
+
+.numbers button
+{   background: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.numbers button:hover
+{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.equals
+{
+    grid-row: 4/6;
+    grid-column: -2/-1;
+}
+
+/* History Styling */
+
+.history
+{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 180px;
+    padding: 5px 10px;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.history-name
+{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin:5px 0px 10px 0px;
+    font-size: 20px;
+}
+
+.clear-history
+{
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    padding: 5px 12px;
+    font-size: 18px;
+    margin: 5px auto;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    display: none;
+}
+
+.clear-history.active
+{
+    display: block;
+}
+
+.clear-history:hover
+{
+    background: rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+}
+
+.history-item
+{
+    list-style-type: none;
+    color: white;
+    margin: 10px 0px 15px 0px;
+    text-align: center;
+    border-bottom: 2px solid white;
+    border-radius: 8px;
+}
