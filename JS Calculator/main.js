@@ -48,7 +48,11 @@ signs.forEach(button => button.addEventListener('click', (e) =>
     }   
 
     previousNumber.innerHTML = currentNumber.innerHTML;
-    mathSign.innerHTML = e.target.dataset.value;
+
+    if(currentNumber.innerHTML !== '')
+    {
+        mathSign.innerHTML = sign;
+    }
     currentNumber.innerHTML = '';
 
 }));
