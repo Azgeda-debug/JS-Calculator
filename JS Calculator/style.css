@@ -50,6 +50,7 @@ body
     flex-direction: column;
     justify-content: space-between;
     word-break: break-all;
+    user-select: none;
 }
 
 .previous-number
@@ -79,6 +80,7 @@ body
     border: none;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    user-select: none;
 }
 
 .numbers button:hover
@@ -110,6 +112,7 @@ body
     text-align: center;
     margin:5px 0px 10px 0px;
     font-size: 20px;
+    user-select: none;
 }
 
 .clear-history
@@ -125,6 +128,7 @@ body
     cursor: pointer;
     transition: .2s ease-in-out;
     display: none;
+    user-select: none;
 }
 
 .clear-history.active
