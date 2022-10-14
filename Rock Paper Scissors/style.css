@@ -1,0 +1,132 @@
+/* Global Settings */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    user-select: none;
+}
+
+/* Game Styling */
+
+.scores
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.computer-name, .player-name
+{
+    background-color: #1174c5;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+.computer-scores, .player-scores
+{
+    font-size: 24px;
+    margin: 0px 40px 0px 4px;
+}
+
+.computer-scores
+{
+    border-right: 2px solid rgb(168, 166, 166);
+    padding-right: 50px;
+}
+
+.player-name
+{
+    background-color: #11c57a;
+}
+
+.turn
+{
+    font-size: 20px;
+    margin: 20px 0px 10px 0px;
+}
+
+.game button
+{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    background: none;
+    border: none;
+    margin: 20px;
+}
+
+.game button.active
+{
+    transform: scale(1.2);
+}
+
+.game button.inactive, .reset-game-button.inactive
+{
+    pointer-events: none;
+}
+
+.game-image
+{
+    pointer-events: none;
+    width: 200px;
+}
+
+.computer-choice, .player-choice
+{
+    font-size: 24px;
+    text-align: center;
+}
+
+.game-result
+{
+    font-size: 30px;
+    padding: 5px 50px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.game-result.active
+{
+    display: none;
+}
+
+.reset-game-button
+{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .3s ease-in-out;
+    display: none;
+}
+
+.reset-game-button.active
+{
+    display: block;
+}
+
+.reset-game-button:hover
+{
+    background: rgba(0, 0, 0, 0.7);
+    letter-spacing: 1px;
+}
