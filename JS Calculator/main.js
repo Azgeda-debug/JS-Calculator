@@ -37,7 +37,7 @@ signs.forEach(button => button.addEventListener('click', (e) =>
     {
         currentNumber.innerHTML = '-'; 
     }
-    if(currentNumber.innerHTML === '-' && sign === '-' || currentNumber.innerHTML === '-' && sign === '+' || currentNumber.innerHTML === '-' && sign === '*' || currentNumber.innerHTML === '-' && sign === '/' || currentNumber.innerHTML === '-' && sign === '^2')
+    if(currentNumber.innerHTML === '-' && sign === '-' || currentNumber.innerHTML === '-' && sign === '+' || currentNumber.innerHTML === '-' && sign === '*' || currentNumber.innerHTML === '-' && sign === '/' || currentNumber.innerHTML === '-' && sign === '^')
     {
         return;
     }
@@ -79,7 +79,7 @@ const calculationResult = () =>
             case '/':
             result = b / a;
             break;
-            case '^2':
+            case '^':
             result = Math.pow(b,a);
             break;
         }
