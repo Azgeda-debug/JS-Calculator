@@ -16,7 +16,7 @@
 
 body
 {
-    background: var(--background);
+    background: var(--background) no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,6 +85,7 @@ body
     font-size: 20px;
     border-radius: 10px;
     border: none;
+    outline: none;
     cursor: pointer;
     transition: all .2s ease-in-out;
     user-select: none;
@@ -157,4 +158,114 @@ body
     text-align: center;
     border-bottom: 2px solid white;
     border-radius: 8px;
+}
+
+@media only screen and (max-width:650px)
+{
+    .calculator
+    {
+        height: 50vh;
+        min-width: 300px;
+    }
+
+    .history
+    {
+        height: 50vh;
+        width: 150px;
+    }
+
+    .history-name
+    {
+        font-size: 16px;
+    }
+    
+    .clear-history
+    {
+        font-size: 16px;
+    }
+    
+    .history-item
+    {
+        font-size: 14px;
+    }
+
+    .result, .previous-number, .current-number
+    {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:490px)
+{
+    .calculator
+    {
+        height: 40vh;
+        min-width: 250px;
+    }
+
+    .history
+    {
+        height: 40vh;
+        width: 120px;
+    }
+
+    .history-name
+    {
+        font-size: 12px;
+    }
+    
+    .clear-history
+    {
+        font-size: 12px;
+    }
+    
+    .history-item
+    {
+        font-size: 10px;
+    }
+
+    .result, .previous-number, .current-number
+    {
+        font-size: 14px;
+    }
+
+    .numbers
+    {
+        height: 75%;
+    }
+}
+
+@media only screen and (max-width:420px)
+{
+    .calculator
+    {
+        height: 34vh;
+        min-width: 210px;
+    }
+
+    .history
+    {
+        height: 34vh;
+        width: 110px;
+    }
+
+    .history-name
+    {
+        font-size: 10px;
+    }
+    
+    .clear-history
+    {
+        font-size: 10px;
+    }
+    
+    .history-item
+    {
+        font-size: 10px;
+    }
+
+    .result, .previous-number, .current-number
+    {
+        font-size: 12px;
+    }
 }
